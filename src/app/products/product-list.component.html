@@ -22,17 +22,17 @@
                 <th>
                     <button class='btn btn-primary'
                             (click)='toggleImage()'>
-                            {{showImage ? 'Hide' : 'Show'}} Image</button>
+                            {{showImage ? 'Hide' : 'Show'}} Card</button>
                 </th>
-                <th>Product</th>
-                <th>Code</th> 
-                <th>Available</th>
-                <th>Price</th>
+                <th>Credit Card</th>
+                <th>Purchase Code</th> 
+                <th>Expiry Date</th>
+                <th>Credit Limit</th>
                 <th>Ratings</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor='let product of products'>
+            <tr *ngFor='let product of filteredProducts'>
                 <td>
                     <img *ngIf='showImage'
                     [src]='product.imageUrl' 
@@ -41,9 +41,9 @@
                     [style.margin.px]='imageMargin'/>
                 </td>
                 <td>{{product.productName}}</td>
-                <td>{{product.productCode}}</td>
+                <td>{{product.productCode | convertToSpaces: '-' }}</td>
                 <td>{{product.releaseDate}}</td>
-                <td>{{product.price}}</td>
+                <td>{{product.price | currency: 'USD' :true:'1.2-2'}}</td>
                 <td>{{product.starRating}}</td>
 
             </tr>
