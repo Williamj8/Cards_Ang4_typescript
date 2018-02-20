@@ -28,33 +28,35 @@ export class ProductListComponent implements OnInit {
     products: IProduct[] = [
         {
             "productId": 1,
-            "productName": "Leaf Rake",
+            "productName": "Gold Card",
             "productCode": "GDN-0011",
-            "releaseDate": "March 19, 2016",
-            "description": "Leaf rake with 48-inch wooden handle.",
-            "price": 19.95,
+            "releaseDate": "July 19, 2021",
+            "description": "Gold card with Membership",
+            "price": 1000.99,
             "starRating": 3.2,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+            "imageUrl": "https://openclipart.org/image/300px/svg_to_png/248765/CreditCard.png"
         },
         {
             "productId": 2,
-            "productName": "Garden Cart",
+            "productName": "Blue Card",
             "productCode": "GDN-0023",
-            "releaseDate": "March 18, 2016",
-            "description": "15 gallon capacity rolling garden cart",
-            "price": 32.99,
-            "starRating": 4.2,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+            "releaseDate": "March 18, 2022",
+            "description": "Blue card with corp membership",
+            "price": 2500.99,
+            "starRating": 4.5,
+            "imageUrl": "https://openclipart.org/image/300px/svg_to_png/13200/Anonymous-smartcard.png"
         },
 
     ];
     // Set default value for filter
     constructor() {
         this.filteredProducts = this.products;
-        this.listFilter = 'Cart' ;
+        this.listFilter = 'Gold Card' ;
 
     }
-
+    onRatingClicked(message: string): void {
+        this.pageTitle = 'This card customer ' + message;
+    }
     performFilter(filterBy: string): IProduct[] {
         filterBy = filterBy.toLocaleLowerCase();
         return this.products.filter((product: IProduct) =>

@@ -6,6 +6,7 @@
         <div class='col-md-2'>Filter by:</div>
         <div class='col-md-4'>
             <input type='text' 
+                        placeholder="Search Cards"
                    [(ngModel)]= listFilter/>
         </div>
     </div>
@@ -44,7 +45,8 @@
                 <td>{{product.productCode | convertToSpaces: '-' }}</td>
                 <td>{{product.releaseDate}}</td>
                 <td>{{product.price | currency: 'USD' :true:'1.2-2'}}</td>
-                <td>{{product.starRating}}</td>
+                <td><pm-star [rating]='product.starRating'
+                    (ratingClicked)='onRatingClicked($event)'></pm-star></td>
 
             </tr>
         </tbody>
