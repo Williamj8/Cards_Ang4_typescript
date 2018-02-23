@@ -1,52 +1,48 @@
-[
-    {
-        "productId": 1,
-        "productName": "Leaf Rake",
-        "productCode": "GDN-0011",
-        "releaseDate": "March 19, 2016",
-        "description": "Leaf rake with 48-inch wooden handle.",
-        "price": 19.95,
-        "starRating": 3.2,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
-    },
-    {
-        "productId": 2,
-        "productName": "Garden Cart",
-        "productCode": "GDN-0023",
-        "releaseDate": "March 18, 2016",
-        "description": "15 gallon capacity rolling garden cart",
-        "price": 32.99,
-        "starRating": 4.2,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-    },
-    {
-        "productId": 5,
-        "productName": "Hammer",
-        "productCode": "TBX-0048",
-        "releaseDate": "May 21, 2016",
-        "description": "Curved claw steel hammer",
-        "price": 8.9,
-        "starRating": 4.8,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
-    },
-    {
-        "productId": 8,
-        "productName": "Saw",
-        "productCode": "TBX-0022",
-        "releaseDate": "May 15, 2016",
-        "description": "15-inch steel blade hand saw",
-        "price": 11.55,
-        "starRating": 3.7,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-    },
-    {
-        "productId": 10,
-        "productName": "Video Game Controller",
-        "productCode": "GMG-0042",
-        "releaseDate": "October 15, 2015",
-        "description": "Standard two-button video game controller",
-        "price": 35.95,
-        "starRating": 4.6,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-    }
+[{
+    "productId": 1,
+    "productName": "Gold Card",
+    "productCode": "GDN-0011",
+    "releaseDate": "July 09, 2021",
+    "description": "Gold card with Membership",
+    "price": 1000.99,
+    "starRating": 3.2,
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/248765/CreditCard.png"
+}, {
+    "productId": 2,
+    "productName": "Blue Card",
+    "productCode": "GDN-0023",
+    "releaseDate": "March 21, 2022",
+    "description": "Blue card with corp membership",
+    "price": 2500.99,
+    "starRating": 4.5,
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/13200/Anonymous-smartcard.png"
+}, {
+    "productId": 5,
+    "productName": "Black Card",
+    "productCode": "GDN-0038",
+    "releaseDate": "Aug 18, 2028",
+    "description": "Black card with Membership",
+    "price": 8000.88,
+    "starRating": 5.0,
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/241542/bw-creditcard.png"
+},
+{
+    "productId": 8,
+    "productName": "Platinum Card",
+    "productCode": "GDN-0078",
+    "releaseDate": "Sep 19, 2025",
+    "description": "Platinum card with Membership",
+    "price": 5000.99,
+    "starRating": 4.2,
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/268431/bluecreditcard.png"
+}, {
+    "productId": 10,
+    "productName": "Brown Card",
+    "productCode": "GDN-0051",
+    "releaseDate": "June 05, 2020",
+    "description": "Brown card with Membership",
+    "price": 1000.99,
+    "starRating": 2.6,
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/217648/credit_card_path.png"
+}
 ]
